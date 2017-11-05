@@ -12,16 +12,16 @@
         </header>
 
         <form method="post" name="signup" target="">
-            <label for="username">Username (email):</label> <input type="email" id="username" required> <br>
-            <label for="fname">First Name:</label> <input type="text" id="fname" required><br>
-            <label for="lname">Last Name</label><input type="text" id="lname" required><br>
-            <label for="password">Password:</label><input type="password" id="password" required><br>
-            <label for="confirm">Confirm Password</label><input type="password" id="confirm" required> 
+            <label for="username">Username (email):</label> <input name="email" type="email" id="username" required> <br>
+            <label for="fname">First Name:</label> <input name="fname" type="text" id="fname" required><br>
+            <label for="lname">Last Name</label><input name="lname" type="text" id="lname" required><br>
+            <label for="password">Password:</label><input name="password" type="password" id="password" required><br>
+            <label for="confirm">Confirm Password</label><input name="confirmPassword" type="password" id="confirm" required> 
 
            <h2>Who are you?</h2> 
-            <input type="radio" name="who" id="player" value="player" requried>  <label for="player">Player</label> 
-            <br><input type="radio" name="who" id="parent" value="parent">  <label for="parent">Parent</label> 
-            <br><input type="radio" name="who" id="coach" value="coach">  <label for="coach">Coach</label> 
+            <input type="radio" name="who" id="player" value="player" requried><label for="player">Player</label> 
+            <br><input type="radio" name="who" id="parent" value="parent"><label for="parent">Parent</label> 
+            <br><input type="radio" name="who" id="coach" value="coach"><label for="coach">Coach</label> 
             <br><button type="submit">Submit</button>
         </form>
 

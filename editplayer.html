@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Edit Player</title>
+    </head>
+    <body>
+        <header>
+            <h1>Team Woo</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Games</li>
+                <li>Player</li>
+                <li>Manage</li>
+            </ul>
+        </nav>
+
+        <img id="currPic" src="#" alt="Player Image">
+        <input formtarget="newPlayer" type="file" name="profileImg" accept="image/*" onchange=""><br>
+
+        <form method="post" name="newPlayer" target="">
+            <label for="fname">First Name:</label> 
+            <input name="fname" type="text" id="fname" placeholder="John" value="John" required><br>
+            <label for="lname">Last Name</label>
+            <input name="lname" type="text" id="lname" placeholder="Smith" value="Smith" required><br>
+            <label for="playerEmail">Email</label>
+            <input name="email" type="email" id="playerEmail" placeholder="user@email.com" value="user@email.com" required><br>
+            <label for="dob">Date of Birth</label>
+            <input name="dob" type="date" id="dob" placeholder="11/05/2017" value="11/05/2017" required><br>
+            <label for="jersey">Jersey Number</label>
+            <input name="jerseynumber" type="number" id="jersey" min="0" max="99" placeholder="10" value="10" required><br>
+            <label for="position">Position</label>
+            <input name="position" type="text" id="position" maxlength="20" placeholder="Midfield" value="Midfield"><br>
+            <label for="captain">Captain:</label>
+            <input name="captain" list="binary" id="captain" type="checkbox" value="yes"><br>
+            <button type="submit">Add Player</button>
+        </form>
+        <form name="delete" method="post">
+            <button type="submit" value="delete">Delete</button>
+        </form>
+
+    </body>
+</html>

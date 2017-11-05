@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Add Player</title>
+    </head>
+    <body>
+        <header>
+            <h1>Team Woo</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Games</li>
+                <li>Player</li>
+                <li>Manage</li>
+            </ul>
+        </nav>
+
+        <img id="chosenPic" src="#" alt="upload image">
+        <input formtarget="newPlayer" type="file" name="profileImg" accept="image/*" onchange=""><br>
+
+        <form method="post" name="newPlayer" target="">
+            <label for="fname">First Name:</label> 
+            <input name="fname" type="text" id="fname" required><br>
+            <label for="lname">Last Name</label>
+            <input name="lname" type="text" id="lname" required><br>
+            <label for="playerEmail">Email</label>
+            <input name="email" type="email" id="playerEmail" required><br>
+            <label for="dob">Date of Birth</label>
+            <input name="dob" type="date" id="dob" required><br>
+            <label for="jersey">Jersey Number</label>
+            <input name="jerseynumber" type="number" id="jersey" min="0" max="99" required><br>
+            <label for="position">Position</label>
+            <input name="position" type="text" id="position" maxlength="15"><br>
+            <label for="captain">Captain:</label>
+            <input name="captain" list="binary" id="captain" type="checkbox" value="yes"><br>
+            <button type="submit">Add Player</button>
+        </form>
+
+    </body>
+</html>
