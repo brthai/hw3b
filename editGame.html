@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Edit Game</title>
+    </head>
+    <body>
+        <header>
+            <h1>Team Woo</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Games</li>
+                <li>Players</li>
+                <li>Manage</li>
+            </ul>
+        </nav>
+
+        <form method="post" name="editGame" target="">
+                <h2>Edit Match</h2>
+                
+            <label>Opponent: <input type="text" name="opponent" value="Current Opponent" required></label>
+            <label>Kick-Off: <input type="datetime" value="11/05/2017" min="11/01/2017" max="01/06/2018" name="kickoff" required></label>
+           
+            <h3>Match Location:</h3>
+            <label>Home: <input type="radio" name="location" value="home"></label><br>
+            <label>Away: <input type="radio" for="awayLoc" name="location" value="away"></label> <br>
+            <input name="awayLoc" id="awayLoc" type="text" min-length="5"><br>
+
+            <!-- TODO-->
+
+            <input type="submit" value="Save">
+            </form>
+
+            <form method="post" name="delete">
+                    <input type="submit" value="Delete">                    
+            </form>
+
+    </body>
+</html>
