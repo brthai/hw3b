@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>View Schedule</title>
+    </head>
+    <body>
+        <header>
+            <h1>Team Woo</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Games</li>
+                <li>Players</li>
+                <li>Manage</li>
+            </ul>
+        </nav>
+
+        <form method="post" name="newPlayer" target="">
+                <h2>Add New Match</h2>
+                
+            <label>Opponent: <input type="text" name="opponent" required></label>
+            <label>Kick-Off: <input type="datetime" value="11/20/2017" min="11/01/2017" max="01/06/2018" name="kickoff" required></label>
+           
+            <h3>Match Location:</h3>
+            <label>Home: <input type="checkbox" name="location" value="home"></label>
+            <label>Away: <input type="checkbox" for="awayLoc" name="location" value="away"></label> 
+            <input name="awayLoc" id="awayLoc" type="text" min-length="5">
+
+            <!-- TODO-->
+            </form>
+
+    </body>
+</html>
